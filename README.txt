@@ -1,5 +1,5 @@
 Notification Junction
-====================
+********************
 Notification Junction is an extendable linux based framework that will interface with multiple applications and multiple Notification Providers, abbreviated as NP(s). Notification Junction is conceptually analogous to an M x N multiplexer, there being M applications and N Notification Providers. Its purpose can be understood by considering the  “doorbell analogy”. In a house, one does not need to check periodically whether there’s someone at the door. One just needs to respond to the doorbell. Similarly, instead of polling periodically to identify changes in a system, CPU cycles can be saved by leveraging system change notifications provided by NPs. Applications will register with the Notification Junction for notifications they are interested in. The Notification Junction will interface with the NPs in turn using NP-specific libraries. The Notification Junction will use multiple threads to interact with the multiple NPs. The Notification Junction has two interfaces - 
 	1. Application-side Interface (Command Line Interface)
 	2. NP-side Interface (Libraries)
